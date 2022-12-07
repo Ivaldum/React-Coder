@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate camionero",
+        "category": "mates",
+        "price": 3500,
+        "stock": 20,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    },
+    {
+        "id": 2,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate torpedo",
+        "category": "mates",
+        "price": 3200,
+        "stock": 15,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    },
+    {
+        "id": 3,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate imperial",
+        "category": "mates",
+        "price": 8200,
+        "stock": 10,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    },
+    {
+        "id": 4,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate camionero",
+        "category": "mates",
+        "price": 3500,
+        "stock": 20,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    },
+    {
+        "id": 5,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate torpedo",
+        "category": "mates",
+        "price": 3200,
+        "stock": 15,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    },
+    {
+        "id": 6,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "name": "Mate imperial",
+        "category": "mates",
+        "price": 8200,
+        "stock": 10,
+        "initial": 1,
+        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+    }
+]
+
