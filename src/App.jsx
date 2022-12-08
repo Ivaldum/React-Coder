@@ -1,10 +1,9 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BannerEnvio from "./components/BannerEnvio";
+import NavBar from "./components/NavBar";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Error404 from "./components/Error404";
-import NavBar from "./components/NavBar";
 
 
 function App () {
@@ -19,7 +18,7 @@ function App () {
                 <Route path={"*"} element={<Error404/>}/>
             </Routes>
         </BrowserRouter>
-    );
+    )
 }
 
 export default App;

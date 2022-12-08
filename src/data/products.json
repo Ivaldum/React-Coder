@@ -6,58 +6,79 @@
         "category": "mates",
         "price": 3500,
         "stock": 20,
-        "initial": 1,
         "description": "Camionero cincelado premium importado con materiales de alta calidad"
     },
     {
         "id": 2,
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_885032-MLA49334812381_032022-W.webp",
         "name": "Mate torpedo",
         "category": "mates",
         "price": 3200,
         "stock": 15,
-        "initial": 1,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Torpedo cincelado premium importado con materiales de alta calidad"
     },
     {
         "id": 3,
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_847807-MLA49389910754_032022-O.webp",
         "name": "Mate imperial",
         "category": "mates",
         "price": 8200,
         "stock": 10,
-        "initial": 1,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Imperial cincelado premium importado con materiales de alta calidad"
     },
     {
         "id": 4,
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
-        "name": "Mate camionero",
-        "category": "mates",
-        "price": 3500,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_771812-MLA52416819829_112022-O.webp",
+        "name": "Termo stanley",
+        "category": "termos",
+        "price": 20000,
         "stock": 20,
-        "initial": 1,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Termo stanley importado de 1L en color blanco"
     },
     {
         "id": 5,
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
-        "name": "Mate torpedo",
-        "category": "mates",
-        "price": 3200,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_776459-MLA49277025759_032022-O.webp",
+        "name": "Termo media manija",
+        "category": "termos",
+        "price": 5000,
         "stock": 15,
-        "initial": 1,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Termo media manija de excelente calidad y portabilidad"
     },
     {
         "id": 6,
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
-        "name": "Mate imperial",
-        "category": "mates",
-        "price": 8200,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_798965-MLA42470820448_072020-O.webp",
+        "name": "Termo cosmos",
+        "category": "termos",
+        "price": 11000,
         "stock": 10,
-        "initial": 1,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Termo importado simil Stanley de excelente calidad"
+    },
+    {
+        "id": 7,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_838351-MLA49524433504_032022-V.webp",
+        "name": "Canaria",
+        "category": "yerba",
+        "price": 1500,
+        "stock": 200,
+        "description": "Yerba importada"
+    },
+    {
+        "id": 8,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_739700-MLA49207461891_022022-V.webp",
+        "name": "Baldo",
+        "category": "yerba",
+        "price": 2100,
+        "stock": 100,
+        "description": "Yerba importada"
+    },
+    {
+        "id": 9,
+        "image": "https://http2.mlstatic.com/D_NQ_NP_720330-MLA47612742432_092021-V.webp",
+        "name": "Rey verde",
+        "category": "yerba",
+        "price": 1000,
+        "stock": 400,
+        "description": "Yerba importada"
     }
 ]
 

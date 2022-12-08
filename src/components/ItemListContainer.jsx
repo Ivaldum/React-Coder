@@ -4,16 +4,15 @@ import products  from "../data/products.json"
 import ItemList from "./ItemList";
 
 
-
 const ItemListContainer = () =>{
 
     const [listProducts, setListProducts] = useState([])
-    const {id} = useParams;
- 
+    const {id} = useParams();
+
     useEffect(() =>{
         const promise = new Promise ((resolve, reject) =>{
             setTimeout(() => {
-                resolve(id ? products.filter(product => product.category === id) : products );
+                resolve(id ? products.filter(item => item.category === id) : products );
             }, 2000);
         });
 
