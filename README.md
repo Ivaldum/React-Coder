@@ -1,1 +1,1 @@
-Proyect Ecommerse with React and bootstrap for CoderHouse.
+Proyect ecommerce with React and bootstrap for CoderHouse.
