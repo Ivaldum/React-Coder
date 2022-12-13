@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import products  from "../data/products.json"
+import ItemSkeleton from "./ItemSkeleton"
 import ItemList from "./ItemList";
 
 
@@ -24,7 +25,9 @@ const ItemListContainer = () =>{
     return(
         <div className="container">
             <div className="row">
-                <ItemList listProducts={listProducts} />
+                { !listProducts.length
+                    ? <ItemSkeleton amount={9} />
+                    : <ItemList listProducts={listProducts} />}
             </div>
         </div>
     )

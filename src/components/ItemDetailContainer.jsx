@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import products from "../data/products.json"
 import ItemDetail from "./ItemDetail"
 
 
 const ItemDetailContainer = () => {
+    const navigate = useNavigate()
 
     const [item, setItem] = useState([]);
     const {id} = useParams();
@@ -12,13 +13,21 @@ const ItemDetailContainer = () => {
     useEffect(() =>{
         const promesa = new Promise ((resolve, reject) =>{
             setTimeout(() => {
-                resolve(products.find(item => item.id === parseInt(id)));
+                const product = products.find(item => item.id === parseInt(id))
+                if(product)
+                    return resolve(product);
+                
+                reject()
             }, 2000);
         });
-
+        
         promesa.then((res) =>{
             setItem(res);
         })
+            .catch(() => {
+                navigate("/")
+            })
+        
     }, [id]);
     
     return(
