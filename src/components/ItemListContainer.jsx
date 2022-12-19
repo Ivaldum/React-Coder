@@ -25,9 +25,11 @@ const ItemListContainer = () =>{
     return(
         <div className="container">
             <div className="row">
-                { !listProducts.length
-                    ? <ItemSkeleton amount={9} />
-                    : <ItemList listProducts={listProducts} />}
+                { 
+                    !listProducts.length
+                        ? <ItemSkeleton amount={9} />
+                        : <ItemList listProducts={listProducts} />
+                }
             </div>
         </div>
     )
