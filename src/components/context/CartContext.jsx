@@ -31,13 +31,17 @@ const CartContextProvider = ({children}) => {
     }
 
     const cartTotal = () => {
-        return cart.length;
+        return cart.reduce((total, item) => total += item.quantity, 0);
+    }
+
+    const precioFinal = () => {
+        return cart.reduce((total, item) => total += item.quantity * item.price, 0);
     }
 
     return(
-        <CartContextProvider value={ {cart, addItem, removeItem, clear, cartTotal} }>
+        <CartContext.Provider value={ {cart, addItem, removeItem, clear, cartTotal, precioFinal} }>
             {children}
-        </CartContextProvider>
+        </CartContext.Provider>
     )
 }
 
