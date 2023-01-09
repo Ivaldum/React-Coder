@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import products  from "../data/products.json"
 import ItemSkeleton from "./ItemSkeleton"
 import ItemList from "./ItemList";
+import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
 
 
 const ItemListContainer = () =>{
@@ -10,17 +10,25 @@ const ItemListContainer = () =>{
     const [listProducts, setListProducts] = useState([])
     const {id} = useParams();
 
-    useEffect(() =>{
-        const promise = new Promise ((resolve, reject) =>{
-            setTimeout(() => {
-                resolve(id ? products.filter(item => item.category === id) : products );
-            }, 2000);
-        });
+    // cargar collecion de productos en Firebase
+    /* useEffect(() => {
+        const db = getFirestore();
+        const productsCollection = collection(db, "products")
 
-        promise.then((res) =>{
-            setListProducts(res);
+        products.forEach((product) =>{
+            addDoc(productsCollection, product);
         })
-    }, [id]);
+
+    }, []); */
+
+    useEffect(() => {
+        const db = getFirestore();
+        const productsCollection = collection(db, "products");
+        getDocs(productsCollection).then((data) => {
+            setListProducts(data.docs.map((x) => ({id:x.id, ...x.data()})
+           )) 
+        });
+    }, []);
 
     return(
         <div className="container">

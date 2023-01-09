@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
         "name": "Mate camionero",
         "category": "mates",
@@ -9,7 +8,6 @@
         "description": "Camionero cincelado premium importado con materiales de alta calidad"
     },
     {
-        "id": 2,
         "image": "https://http2.mlstatic.com/D_NQ_NP_885032-MLA49334812381_032022-W.webp",
         "name": "Mate torpedo",
         "category": "mates",
@@ -18,7 +16,6 @@
         "description": "Torpedo cincelado premium importado con materiales de alta calidad"
     },
     {
-        "id": 3,
         "image": "https://http2.mlstatic.com/D_NQ_NP_847807-MLA49389910754_032022-O.webp",
         "name": "Mate imperial",
         "category": "mates",
@@ -27,7 +24,6 @@
         "description": "Imperial cincelado premium importado con materiales de alta calidad"
     },
     {
-        "id": 4,
         "image": "https://http2.mlstatic.com/D_NQ_NP_771812-MLA52416819829_112022-O.webp",
         "name": "Termo stanley",
         "category": "termos",
@@ -36,7 +32,6 @@
         "description": "Termo stanley importado de 1L en color blanco"
     },
     {
-        "id": 5,
         "image": "https://http2.mlstatic.com/D_NQ_NP_776459-MLA49277025759_032022-O.webp",
         "name": "Termo media manija",
         "category": "termos",
@@ -45,7 +40,6 @@
         "description": "Termo media manija de excelente calidad y portabilidad"
     },
     {
-        "id": 6,
         "image": "https://http2.mlstatic.com/D_NQ_NP_798965-MLA42470820448_072020-O.webp",
         "name": "Termo cosmos",
         "category": "termos",
@@ -54,7 +48,6 @@
         "description": "Termo importado simil Stanley de excelente calidad"
     },
     {
-        "id": 7,
         "image": "https://http2.mlstatic.com/D_NQ_NP_838351-MLA49524433504_032022-V.webp",
         "name": "Canaria",
         "category": "yerba",
@@ -63,7 +56,6 @@
         "description": "Yerba importada"
     },
     {
-        "id": 8,
         "image": "https://http2.mlstatic.com/D_NQ_NP_739700-MLA49207461891_022022-V.webp",
         "name": "Baldo",
         "category": "yerba",
@@ -72,7 +64,6 @@
         "description": "Yerba importada"
     },
     {
-        "id": 9,
         "image": "https://http2.mlstatic.com/D_NQ_NP_720330-MLA47612742432_092021-V.webp",
         "name": "Rey verde",
         "category": "yerba",

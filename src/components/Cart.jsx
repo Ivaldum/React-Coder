@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
 
 const Cart = () => {
-    const {cart, cartTotal, clear, removeItem, precioFinal} = useContext(CartContext);
-
-    console.log(cart)
+    const {cart, cartTotal, clearCart, removeItem, precioFinal} = useContext(CartContext);
 
     if (cartTotal() === 0) {
         return (
@@ -37,7 +35,7 @@ const Cart = () => {
                         <tbody>
                             {cart.map(item => (
                                 <tr key={item.id}>
-                                    <td className="align-middle"><img src={item.image} alt={item.name} width={80} /></td>
+                                    <td className="align-middle"><img src={item.image} alt={item.name} width={70} /></td>
                                     <td className="align-middle">{item.name}</td>
                                     <td className="align-middle ">{item.quantity}</td>
                                     <td className="align-middle">${item.quantity * item.price}</td>
@@ -49,12 +47,14 @@ const Cart = () => {
                                 <td colSpan={2}>&nbsp;</td>
                                 <td><b>TOTAL A PAGAR</b></td>
                                 <td>${precioFinal()}</td>
-                                <td className="text-end"><button className="btn btn-success">Finalizar compra</button></td>
+                                <td className="text-end"><Link to={"/checkout"} className="btn btn-success">Finalizar compra</Link></td>
                             </tr>
                         </tbody>
-                        <tr>
-                            <th scope="col" colSpan={5} className="text-end"><Link onClick={clear} className="btn btn-success my-2"> Vaciar carrito</Link></th>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="col" colSpan={5} className="text-end"><Link onClick={clearCart} className="btn btn-success my-2"> Vaciar carrito</Link></th>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

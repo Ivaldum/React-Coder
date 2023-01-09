@@ -27,9 +27,9 @@ const ItemCount = ({ stock, onAdd}) => {
 
     return(
         <div className="container">
-            <button onClick={decrease}> - </button>
-            <span> {count} </span>
-            <button onClick={increase}> + </button>
+            <button onClick={decrease} className="btn btn-danger"> - </button>
+            <span className="fs-5 my-2 mx-2"> {count} </span>
+            <button onClick={increase} className="btn btn-success"> + </button>
             {vendido 
                 ? <Link to={"/cart"} className="btn btn-success mx-3"> Terminar compra</Link> 
                 : <button className="btn btn-success mx-3" onClick={() => { addCart(count) }}> {<FaShoppingCart/>} Agregar al carrito </button>
