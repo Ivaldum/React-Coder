@@ -14,13 +14,16 @@ const NavBar = () => {
                         <div className="collapse navbar-collapse d-flex justify-content-center fs-5" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/mates"}>MATES</NavLink>
+                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/mates"}>Mates</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/yerba"}>YERBA</NavLink>
+                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/yerba"}>Yerba</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/termos"}>TERMOS</NavLink>
+                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/termos"}>Termos</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link text-success" activeclassname="page" aria-current="page" to={"category/bombilla"}>Bombillas</NavLink>
                                 </li>
                             </ul>
                         </div>

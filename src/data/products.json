@@ -70,6 +70,30 @@
         "price": 1000,
         "stock": 400,
         "description": "Yerba importada"
+    },
+    {
+        "image": "../images/bombilla-lisa.png",
+        "name": "bombillon liso alpaca",
+        "category": "bombilla",
+        "price": 7000,
+        "stock": 50,
+        "description": "Bombillon liso de alpaca importado"
+    },
+    {
+        "image": "../images/bombilla-picoloro.png",
+        "name": "bombilla pico loro",
+        "category": "bombilla",
+        "price": 6200,
+        "stock": 40,
+        "description": "Bombilla pico de loro de alpaca"
+    },
+    {
+        "image": "../images/bombilla-picorey.png",
+        "name": "bombilla picop rey",
+        "category": "bombilla",
+        "price": 6500,
+        "stock": 25,
+        "description": "Bombilla pico de rey de alpaca"
     }
 ]
 

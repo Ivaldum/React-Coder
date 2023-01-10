@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext"; 
-import { addDoc, collection, getFirestore, updateDoc } from "firebase/firestore";
+import { addDoc, collection, getDoc, getFirestore, writeBatch } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
 
@@ -17,13 +18,25 @@ const Checkout = () => {
             buyer: {name:nombre, phone:telefono, email:email},
             items: cart.map(product => ({id:product.id, tittle:product.name, quantity:product.quantity, price:product.price, totalPrice: product.quantity * product.price})),
             total: precioFinal(),
-            orderDate: `${fecha.getFullYear()} - ${fecha.getMonth() + 1} - ${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes}:${fecha.getSeconds}`
+            orderDate: `${fecha.getFullYear()} - ${fecha.getMonth() + 1} - ${fecha.getDate()}`
         };
 
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((order) => {
             setOrderId(order.id);
+
+            //Actualizar stock de productos luego de la compra (NO FUNCA)
+            const batch = writeBatch(db);
+            cart.forEach(item => {
+                let product = doc(db, "products", item.id)
+                getDoc(product).then((x) => {
+                    batch.update(product, {stock: x.data().stock - product.quantity});
+                    batch.commit();
+                }); 
+
+            });
+
             clearCart();
         });
     }
@@ -72,7 +85,7 @@ const Checkout = () => {
             <div className="row">
                 <div className="col text-center">
                     {orderId !== ""
-                        ? <div className="alert alert-success" role="alert"> Orden generada correctamente, numero: {orderId} </div>
+                        ? <Navigate to={"/ordenGenerada/" + orderId} />
                         : ""
                     }
                 </div>

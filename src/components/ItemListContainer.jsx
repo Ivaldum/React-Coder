@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import products from "../data/products.json"
 import ItemSkeleton from "./ItemSkeleton"
 import ItemList from "./ItemList";
-import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
+import { addDoc, collection, getDocs, getFirestore, query, where } from "firebase/firestore";
 
 
 const ItemListContainer = () =>{
@@ -11,7 +12,7 @@ const ItemListContainer = () =>{
     const {id} = useParams();
 
     // cargar collecion de productos en Firebase
-    /* useEffect(() => {
+/*     useEffect(() => {
         const db = getFirestore();
         const productsCollection = collection(db, "products")
 
@@ -24,11 +25,13 @@ const ItemListContainer = () =>{
     useEffect(() => {
         const db = getFirestore();
         const productsCollection = collection(db, "products");
-        getDocs(productsCollection).then((data) => {
-            setListProducts(data.docs.map((x) => ({id:x.id, ...x.data()})
+        const res = id ? query(productsCollection, where("category", "==", id)) : productsCollection;
+
+        getDocs(res).then((product) => {
+            setListProducts(product.docs.map((x) => ({id:x.id, ...x.data()})
            )) 
         });
-    }, []);
+    }, [id]);
 
     return(
         <div className="container">
