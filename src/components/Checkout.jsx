@@ -27,7 +27,7 @@ const Checkout = () => {
             setOrderId(order.id);
 
             //Actualizar stock de productos luego de la compra (NO FUNCA)
-            const batch = writeBatch(db);
+/*             const batch = writeBatch(db);
             cart.forEach(item => {
                 let product = doc(db, "products", item.id)
                 getDoc(product).then((x) => {
@@ -35,28 +35,28 @@ const Checkout = () => {
                     batch.commit();
                 }); 
 
-            });
+            }); */
 
             clearCart();
-        });
+        }); 
     }
 
     return(
         <div className="container">
             <div className="row my-5">
                 <div className="col-md-6">  
-                    <form>
+                    <form className="needs-validation">
                         <div className="mb-3">
-                            <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su Nombre" onInput={(e) => {setNombre(e.target.value)}}/>
+                            <label htmlFor="nombre" className="form-label">Nombre completo</label>
+                            <input type="text" className="form-control" placeholder="Ingrese su Nombre" required onInput={(e) => {setNombre(e.target.value)}}/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="telefono" className="form-label">Telefono</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su Telefono" onInput={(e) => {setTelefono(e.target.value)}}/>
+                            <input type="text" className="form-control" placeholder="Ingrese su Telefono" required onInput={(e) => {setTelefono(e.target.value)}}/>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su Email" onInput={(e) => {setEmail(e.target.value)}}/>
+                            <input type="text" className="form-control" placeholder="Ingrese su Email" required onInput={(e) => {setEmail(e.target.value)}}/>
                         </div>
                         <button type="button" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
                     </form>

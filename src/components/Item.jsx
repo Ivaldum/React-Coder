@@ -4,8 +4,8 @@ const Item = ({ item }) => {
     
     return(
         <div className="col-md-4">
-            <div className="card text-center mt-2 mb-1">
-                <img src={item.image} alt="" className="card-img-top" />
+            <div className="card text-center mt-3 mx-auto">
+                <img src={item.image} alt="" />
                 <div className="card-body bg-dark text-light">
                     <p className="card-text">{ item.name }</p>
                     <Link to={"/product/" + item.id} className="btn btn-success"> Comprar </Link>

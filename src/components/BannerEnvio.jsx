@@ -1,7 +1,10 @@
 const BannerEnvio = () => {
     return(
         <div className="bg-success text-center p-1">
-            ENVIOS GRATIS EN COMPRAS MAYORES A $10000
+            <strong>6 CUOTAS SIN INTERES </strong>
+            EN TODOS LOS PRODUCTOS - 
+            <strong> ENVIOS GRATIS </strong>
+            EN COMPRAS MAYORES A $10000
         </div>
     )
 }

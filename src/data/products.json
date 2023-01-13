@@ -1,22 +1,22 @@
 [
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_638382-MLA49850713005_052022-F.webp",
+        "image": "../images/mate-camionero.png",
         "name": "Mate camionero",
         "category": "mates",
-        "price": 3500,
+        "price": 6200,
         "stock": 20,
         "description": "Camionero cincelado premium importado con materiales de alta calidad"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_885032-MLA49334812381_032022-W.webp",
+        "image": "../images/mate-torpedo.png",
         "name": "Mate torpedo",
         "category": "mates",
-        "price": 3200,
+        "price": 5500,
         "stock": 15,
         "description": "Torpedo cincelado premium importado con materiales de alta calidad"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_847807-MLA49389910754_032022-O.webp",
+        "image": "../images/mate-imperial.png",
         "name": "Mate imperial",
         "category": "mates",
         "price": 8200,
@@ -24,50 +24,26 @@
         "description": "Imperial cincelado premium importado con materiales de alta calidad"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_771812-MLA52416819829_112022-O.webp",
-        "name": "Termo stanley",
-        "category": "termos",
-        "price": 20000,
-        "stock": 20,
-        "description": "Termo stanley importado de 1L en color blanco"
-    },
-    {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_776459-MLA49277025759_032022-O.webp",
-        "name": "Termo media manija",
-        "category": "termos",
-        "price": 5000,
-        "stock": 15,
-        "description": "Termo media manija de excelente calidad y portabilidad"
-    },
-    {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_798965-MLA42470820448_072020-O.webp",
-        "name": "Termo cosmos",
-        "category": "termos",
-        "price": 11000,
-        "stock": 10,
-        "description": "Termo importado simil Stanley de excelente calidad"
-    },
-    {
         "image": "https://http2.mlstatic.com/D_NQ_NP_838351-MLA49524433504_032022-V.webp",
         "name": "Canaria",
         "category": "yerba",
-        "price": 1500,
+        "price": 1800,
         "stock": 200,
         "description": "Yerba importada"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_739700-MLA49207461891_022022-V.webp",
-        "name": "Baldo",
+        "image": "../images/yerba-reyverde.png",
+        "name": "Rey verde",
         "category": "yerba",
         "price": 2100,
         "stock": 100,
         "description": "Yerba importada"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_720330-MLA47612742432_092021-V.webp",
+        "image": "../images/yerba-reyverde2.png",
         "name": "Rey verde",
         "category": "yerba",
-        "price": 1000,
+        "price": 1400,
         "stock": 400,
         "description": "Yerba importada"
     },
@@ -75,7 +51,7 @@
         "image": "../images/bombilla-lisa.png",
         "name": "bombillon liso alpaca",
         "category": "bombilla",
-        "price": 7000,
+        "price": 5000,
         "stock": 50,
         "description": "Bombillon liso de alpaca importado"
     },
@@ -83,15 +59,42 @@
         "image": "../images/bombilla-picoloro.png",
         "name": "bombilla pico loro",
         "category": "bombilla",
-        "price": 6200,
+        "price": 4200,
         "stock": 40,
         "description": "Bombilla pico de loro de alpaca"
     },
     {
         "image": "../images/bombilla-picorey.png",
-        "name": "bombilla picop rey",
+        "name": "bombilla pico rey",
         "category": "bombilla",
-        "price": 6500,
+        "price": 4500,
+        "stock": 25,
+        "description": "Bombilla pico de rey de alpaca"
+    }
+    ,
+    {
+        "image": "../images/portatermo1.png",
+        "name": "bombilla picop rey",
+        "category": "bolsos",
+        "price": 4500,
+        "stock": 25,
+        "description": "Bombilla pico de rey de alpaca"
+    }
+    ,
+    {
+        "image": "../images/portatermo2.png",
+        "name": "bombilla picop rey",
+        "category": "bolsos",
+        "price": 4500,
+        "stock": 25,
+        "description": "Bombilla pico de rey de alpaca"
+    }
+    ,
+    {
+        "image": "../images/portatermo3.png",
+        "name": "bombilla picop rey",
+        "category": "bolsos",
+        "price": 4500,
         "stock": 25,
         "description": "Bombilla pico de rey de alpaca"
     }
