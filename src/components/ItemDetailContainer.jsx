@@ -16,9 +16,6 @@ const ItemDetailContainer = () => {
             console.log(product)
             if(product.exists()) {
                 setItem({id: product.id, ...product.data()})
-            } 
-            else{
-                console.log("Document does not exist")
             }
         })
     }, [])

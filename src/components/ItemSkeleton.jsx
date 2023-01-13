@@ -1,6 +1,6 @@
 const Skeleton = () => (<div className="col-4">
     <div className="card mx-2 my-4" aria-hidden="true">
-        <svg className="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+        <svg className="bd-placeholder-img card-img-top" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
         <div className="card-body">
             <div className="h5 card-title placeholder-glow">
                 <span className="placeholder col-6"></span>

@@ -13,27 +13,33 @@ const Checkout = () => {
     const [orderId, setOrderId] = useState("");
 
     const generarOrden = () => {
-        const fecha = new Date();
-        const order = {
-            buyer: {name:nombre, phone:telefono, email:email},
-            items: cart.map(product => ({id:product.id, tittle:product.name, quantity:product.quantity, price:product.price, totalPrice: product.quantity * product.price})),
-            total: precioFinal(),
-            orderDate: `${fecha.getFullYear()} - ${fecha.getMonth() + 1} - ${fecha.getDate()}`
-        };
-
-        const db = getFirestore();
-        const ordersCollection = collection(db, "orders");
-        addDoc(ordersCollection, order).then((order) => {
-            setOrderId(order.id);
-            clearCart();
-        }); 
+        if(!(nombre && telefono && email)){
+            return;
+        }
+        else{
+            const fecha = new Date();
+            const order = {
+                buyer: {name:nombre, phone:telefono, email:email},
+                items: cart.map(product => ({id:product.id, tittle:product.name, quantity:product.quantity, price:product.price, totalPrice: product.quantity * product.price})),
+                total: precioFinal(),
+                orderDate: `${fecha.getFullYear()} - ${fecha.getMonth() + 1} - ${fecha.getDate()}`
+            };
+    
+            const db = getFirestore();
+            const ordersCollection = collection(db, "orders");
+            addDoc(ordersCollection, order).then((order) => {
+                setOrderId(order.id);
+                clearCart();
+            }); 
+        }
     }
 
     return(
         <div className="container">
             <div className="row my-5">
                 <div className="col-md-6">  
-                    <form className="needs-validation">
+                    <h4><mark className="bg-success">Datos del comprador:</mark></h4>
+                    <form className="my-3">
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre completo</label>
                             <input type="text" className="form-control" placeholder="Ingrese su Nombre" required onInput={(e) => {setNombre(e.target.value)}}/>
@@ -46,10 +52,11 @@ const Checkout = () => {
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="text" className="form-control" placeholder="Ingrese su Email" required onInput={(e) => {setEmail(e.target.value)}}/>
                         </div>
-                        <button type="button" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
+                        <button type="submit" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
                 <div className="col-md-6">
+                    <h4><mark className="bg-success">Detalles de la compra:</mark></h4>
                     <table className="table">
                         <tbody>
                             {cart.map(item => (
