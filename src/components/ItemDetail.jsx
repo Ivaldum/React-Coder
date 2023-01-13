@@ -18,7 +18,7 @@ const ItemDetail = ({item}) => {
     return(
         <div className="d-flex flex-row justify-content-center border my-4">
             <div className="col-md-4">
-                <img src={item.image} alt={item.name} className="img-fluid" width={250}/>
+                <img src={item.image} alt={item.name} className="img-fluid" width={350}/>
             </div>
             <div className="col-md-4 d-flex flex-column justify-content-center text-center">
                 <h2>{item.name}</h2>

@@ -6,7 +6,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Error404 from "./components/Error404";
 import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart"
-import Checkout from "./components/CheckOut";
+import Checkout from "./components/Checkout";
 import OrdenGenerada from "./components/OrdenGenerada";
 
 function App () {
