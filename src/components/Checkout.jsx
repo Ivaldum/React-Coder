@@ -25,18 +25,6 @@ const Checkout = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((order) => {
             setOrderId(order.id);
-
-            //Actualizar stock de productos luego de la compra (NO FUNCA)
-/*             const batch = writeBatch(db);
-            cart.forEach(item => {
-                let product = doc(db, "products", item.id)
-                getDoc(product).then((x) => {
-                    batch.update(product, {stock: x.data().stock - product.quantity});
-                    batch.commit();
-                }); 
-
-            }); */
-
             clearCart();
         }); 
     }

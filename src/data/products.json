@@ -5,7 +5,7 @@
         "category": "mates",
         "price": 6200,
         "stock": 20,
-        "description": "Camionero cincelado premium importado con materiales de alta calidad"
+        "description": "Camionero cincelado premium importado"
     },
     {
         "image": "../images/mate-torpedo.png",
@@ -13,7 +13,7 @@
         "category": "mates",
         "price": 5500,
         "stock": 15,
-        "description": "Torpedo cincelado premium importado con materiales de alta calidad"
+        "description": "Torpedo cincelado premium importado"
     },
     {
         "image": "../images/mate-imperial.png",
@@ -21,10 +21,10 @@
         "category": "mates",
         "price": 8200,
         "stock": 10,
-        "description": "Imperial cincelado premium importado con materiales de alta calidad"
+        "description": "Imperial cincelado premium importado"
     },
     {
-        "image": "https://http2.mlstatic.com/D_NQ_NP_838351-MLA49524433504_032022-V.webp",
+        "image": "../images/yerba-canaria.jpg",
         "name": "Canaria",
         "category": "yerba",
         "price": 1800,
@@ -32,7 +32,15 @@
         "description": "Yerba importada"
     },
     {
-        "image": "../images/yerba-reyverde.png",
+        "image": "../images/yerba-canariaEsp.jpg",
+        "name": "Canaria especial",
+        "category": "yerba",
+        "price": 2000,
+        "stock": 50,
+        "description": "Yerba importada"
+    },
+    {
+        "image": "../images/yerba-baldo.jgp",
         "name": "Rey verde",
         "category": "yerba",
         "price": 2100,
@@ -40,16 +48,8 @@
         "description": "Yerba importada"
     },
     {
-        "image": "../images/yerba-reyverde2.png",
-        "name": "Rey verde",
-        "category": "yerba",
-        "price": 1400,
-        "stock": 400,
-        "description": "Yerba importada"
-    },
-    {
         "image": "../images/bombilla-lisa.png",
-        "name": "bombillon liso alpaca",
+        "name": "Bombillon liso alpaca",
         "category": "bombilla",
         "price": 5000,
         "stock": 50,
@@ -57,7 +57,7 @@
     },
     {
         "image": "../images/bombilla-picoloro.png",
-        "name": "bombilla pico loro",
+        "name": "Bombilla pico loro",
         "category": "bombilla",
         "price": 4200,
         "stock": 40,
@@ -65,7 +65,7 @@
     },
     {
         "image": "../images/bombilla-picorey.png",
-        "name": "bombilla pico rey",
+        "name": "Bombilla pico rey",
         "category": "bombilla",
         "price": 4500,
         "stock": 25,
@@ -74,29 +74,29 @@
     ,
     {
         "image": "../images/portatermo1.png",
-        "name": "bombilla picop rey",
+        "name": "Portatermo matero",
         "category": "bolsos",
-        "price": 4500,
+        "price": 4000,
         "stock": 25,
-        "description": "Bombilla pico de rey de alpaca"
+        "description": "Portatermo matero"
     }
     ,
     {
         "image": "../images/portatermo2.png",
-        "name": "bombilla picop rey",
+        "name": "Portatermo matero",
         "category": "bolsos",
-        "price": 4500,
+        "price": 5000,
         "stock": 25,
-        "description": "Bombilla pico de rey de alpaca"
+        "description": "Portatermo matero de alta calidad"
     }
     ,
     {
-        "image": "../images/portatermo3.png",
-        "name": "bombilla picop rey",
+        "image": "../images/portatermo3.jpg",
+        "name": "Mochila matera",
         "category": "bolsos",
-        "price": 4500,
+        "price": 6500,
         "stock": 25,
-        "description": "Bombilla pico de rey de alpaca"
+        "description": "Mochila matera ideal para termos stanley"
     }
 ]
 
