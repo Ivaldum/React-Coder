@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext"; 
-import { addDoc, collection, getDoc, getFirestore, writeBatch } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { Navigate } from "react-router-dom";
 
 const Checkout = () => {
@@ -14,6 +14,9 @@ const Checkout = () => {
 
     const generarOrden = () => {
         if(!(nombre && telefono && email)){
+            <div className="alert alert-success">
+                Todos los campos son obligatorios
+            </div>
             return;
         }
         else{
@@ -52,7 +55,7 @@ const Checkout = () => {
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="text" className="form-control" placeholder="Ingrese su Email" required onInput={(e) => {setEmail(e.target.value)}}/>
                         </div>
-                        <button type="submit" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
+                        <button type="button" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
                 <div className="col-md-6">
