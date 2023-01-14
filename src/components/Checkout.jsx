@@ -12,14 +12,12 @@ const Checkout = () => {
     const [email, setEmail] = useState("");
     const [orderId, setOrderId] = useState("");
 
-    const generarOrden = () => {
+    const generarOrden = (e) => {
         if(!(nombre && telefono && email)){
-            <div className="alert alert-success">
-                Todos los campos son obligatorios
-            </div>
             return;
         }
         else{
+            e.preventDefault();
             const fecha = new Date();
             const order = {
                 buyer: {name:nombre, phone:telefono, email:email},
@@ -55,7 +53,7 @@ const Checkout = () => {
                             <label htmlFor="email" className="form-label">Email</label>
                             <input type="text" className="form-control" placeholder="Ingrese su Email" required onInput={(e) => {setEmail(e.target.value)}}/>
                         </div>
-                        <button type="button" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
+                        <button type="submit" className="btn btn-success" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
                 <div className="col-md-6">
