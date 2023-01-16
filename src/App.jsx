@@ -8,6 +8,7 @@ import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart"
 import Checkout from "./components/Checkout";
 import OrdenGenerada from "./components/OrdenGenerada";
+import Footer from "./components/Footer";
 
 function App () {
     return(
@@ -24,6 +25,7 @@ function App () {
                     <Route path={"/ordenGenerada/:id"} element={<OrdenGenerada/>}/>
                     <Route path={"*"} element={<Error404/>}/>
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </CartContextProvider>
     );
