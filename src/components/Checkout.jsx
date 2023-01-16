@@ -39,7 +39,7 @@ const Checkout = () => {
         <div className="container">
             <div className="row my-5">
                 <div className="col-md-6">  
-                    <h4><mark className="bg-success">Datos del comprador:</mark></h4>
+                    <h4 className="text-success">Datos del comprador: </h4>
                     <form className="my-3">
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre completo</label>
@@ -57,21 +57,21 @@ const Checkout = () => {
                     </form>
                 </div>
                 <div className="col-md-6">
-                    <h4><mark className="bg-success">Detalles de la compra:</mark></h4>
+                    <h4 className="text-success">Detalles de la compra: </h4>
                     <table className="table">
                         <tbody>
                             {cart.map(item => (
                                 <tr key={item.id}>
                                     <td className="align-middle"><img src={item.image} alt={item.name} width={70} /></td>
                                     <td className="align-middle">{item.name}</td>
-                                    <td className="align-middle ">{item.quantity}</td>
+                                    <td className="align-middle text-center">{item.quantity}</td>
                                     <td className="align-middle">${item.quantity * item.price}</td>
                                 </tr>
                                 ))
                             }
                             <tr>
                                 <td colSpan={2}>&nbsp;</td>
-                                <td><b>TOTAL A PAGAR</b></td>
+                                <td className="text-center"><b>TOTAL A PAGAR</b></td>
                                 <td>${precioFinal()}</td>
                             </tr>
                         </tbody>
